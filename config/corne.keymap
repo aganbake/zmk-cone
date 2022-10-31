@@ -96,7 +96,7 @@
 //                                   '--------+---------+---------'    '-------+---------+---------'
                         bindings = <
           &kp RBRC     &kp ASTRK   &kp LPAR    &kp C_MUTE   &kp C_VOL_DN  &kp C_VOL_UP        &kp PG_UP  &kp HOME   &kp UARW   &kp END   &kp DEL  &kp PSCRN
-          &trans       &kp AMPS    &kp RPAR    &none        &kp EXCL      &none               &kp PG_DN  &kp LARW   &kp DARW   &kp RARW  &kp INS  &kp CLCK
+          &trans       &kp AMPS    &kp RPAR    &kp EQUAL    &kp EXCL      &none               &kp PG_DN  &kp LARW   &kp DARW   &kp RARW  &kp INS  &kp CLCK
           &trans       &kp NUBS    &kp LBKT    &kp RBKT     &kp QUOT      &kp NUHS            &none      &none      &none      &none     &none    &trans
                                                &none        &none         &none               &kp RALT   &none      &none
                         >;
