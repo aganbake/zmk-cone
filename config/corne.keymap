@@ -99,14 +99,14 @@
 // |--------------+---------+--------+--------+---------+---------|    |-------+---------+---------+---------+----------+----------|
 // |     SHIFT    |    /    |    =   |        |         |         |    | PF DN |  LEFT   |  DOWN   |  RIGHT  |          | CAPS LCK |
 // |--------------+---------+--------+--------+---------+---------|    |-------+---------+---------+---------+----------+----------|
-// |     CTRL     |    <>   |    [   |        |         |         |    |       |         |         |         |          |          |
+// |     CTRL     |    <>   |    [   |   ]    |    {    |    }    |    |       |         |         |         |          |          |
 // '---------------------------------+--------+---------+---------+    |-------+---------+---------+-------------------------------'
 //                                   |  GUI   |         |   ALT   |    |       |         |         |
 //                                   '--------+---------+---------'    '-------+---------+---------'
                         bindings = <
           &kp RPAR        &kp ASTRK   &kp LPAR    &kp C_MUTE   &kp C_VOL_DN  &kp C_VOL_UP        &kp PG_UP  &kp HOME   &kp UARW   &kp END   &none  &kp PSCRN
           &sk LSHFT       &kp AMPS    &RBRC       &none        &none         &none               &kp PG_DN  &kp LARW   &kp DARW   &kp RARW  &none  &kp CLCK
-          &kp LCTL        &NUBS       &mc_brck    &none        &none         &none               &none      &none      &none      &none     &none  &trans
+          &kp LCTL        &NUBS       &LBKT       &RBKT        &QUOT         &NUHS               &none      &none      &none      &none     &none  &trans
                                                   &sk LGUI     &none         &kp LALT            &none      &none      &none
                         >;
                 };
