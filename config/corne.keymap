@@ -24,19 +24,19 @@
                 default_layer { 
 // DEFAULT LAYER
 // .--------------------------------------------------------------.       .-----------------------------------------------------------.
-// |   TAB        |    Q    |    W   |   E    |    R    |    T    |       |   Y   |    U    |    I    |    O    |     P    |   BKSP   |
+// |   ESC        |    Q    |    W   |   E    |    R    |    T    |       |   Y   |    U    |    I    |    O    |     P    |   BKSP   |
 // |--------------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
-// |   SHFT/Tab   |    A    |    S   |   D    |    F    |    G    |       |   H   |    J    |    K    |    L    |    ;ñ    |    '´    |
+// |   SHFT/Tab   |    A    |    S   |   D    |    F    |    G    |       |   H   |    J    |    K    |    L    |    ;Ñ    |    '´    |
 // |--------------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
 // |   CTRL       |    Z    |    X   |   C    |    V    |    B    |       |   N   |    M    |   ,;    |    :.   |    /-_   |     NAV  |
 // '---------------------------------+--------+---------+---------+       |-------+---------+---------+-------------------------------'
-//                                   |  GUI   |   RSE   |   SPC   |       |  ENT  |   LWR   |  LALT   |
+//                                   |  GUI   |   RSE   |AltGr/SPC|       |  ENT  |   LWR   |  LALT   |
 //                                   '--------+---------+---------'       '-------+---------+---------'
                   bindings = <
         &kp TAB        &kp Q    &kp W    &kp E    &kp R     &kp T           &kp Y    &kp U      &kp I     &kp O     &kp P     &kp BKSP
-        &kp LSFT       &kp A    &kp S    &kp D    &kp F     &kp G           &kp H    &kp J      &kp K     &kp L     &kp SCLN  &kp QUOT
+        &mt LSHFT TAB  &kp A    &kp S    &kp D    &kp F     &kp G           &kp H    &kp J      &kp K     &kp L     &kp SCLN  &kp QUOT
         &kp LCTL       &kp Z    &kp X    &kp C    &kp V     &kp B           &kp N    &kp M      &kp CMMA  &kp DOT   &kp FSLH  &mo NAVI
-                                       &kp LGUI  &mo LOWER  &mt LSFT SPC    &kp RET  &mo RAISE  &kp LALT
+                                       &kp LGUI  &mo LOWER  &mt RALT SPC    &kp RET  &mo RAISE  &kp LALT
                             >;
                 };
 
@@ -44,20 +44,20 @@
                 lower_layer {
 // LOWER Layer: Media and Number Pad
 // .--------------------------------------------------------------.    .-----------------------------------------------------------.
-// |   ESC        |    F5   |   F8   |   F9   |   F10   |         |    |   -   |   7 /   |   8 (   |   9 )   |    '?    |   BKSP   |
+// |   ESC        |    F9   |   F10  |   F11  |   F12   |         |    |   -   |   7 /   |   8 (   |   9 )   |    '?    |   BKSP   |
 // |--------------+---------+--------+--------+---------+---------|    |-------+---------+---------+---------+----------+----------|
-// |   SHFT/Tab   |    F4   |   F5   |   F6   |   F11   |         |    |   (   |   4$~   |   5%€   |   6&¬   |   ,;     |    @     |
+// |   SHFT/Tab   |    F5   |   F6   |   F7   |   F8    |         |    |   (   |   4$~   |   5%€   |   6&¬   |   ,;     |    @     |
 // |--------------+---------+--------+--------+---------+---------|    |-------+---------+---------+---------+----------+----------|
-// |   CTRL       |    F1   |   F2   |   F3   |   F12   |         |    |  0 =  |   1!|   |   2"@   |   3·#   |    ¡¿    |   ALTGR  |
+// |   CTRL       |    F1   |   F2   |   F3   |   F4    |         |    |  0 =  |   1!|   |   2"@   |   3·#   |    ¡¿    |   ALTGR  |
 // '---------------------------------+--------+---------+---------+    |-------+---------+---------+-------------------------------'
 //                                   |  GUI   |   RSE   |   SPC   |    |  ENT  |   ADJ   |   LALT   |
 //                                   '--------+---------+---------'    '-------+---------+---------'
 
                   bindings = <
-          &kp ESC     &kp F5   &kp F8   &kp F9   &kp F10   &none       &kp FSLH   &kp NUM_7  &kp NUM_8  &kp NUM_9  &kp MINUS  &kp BKSP
-          &trans      &kp F4   &kp F5   &kp F6   &kp F11   &none       &kp STAR   &kp NUM_4  &kp NUM_5  &kp NUM_6  &kp COMMA  &kp AT_SIGN
-          &trans      &kp F1   &kp F2   &kp F3   &kp F12   &none       &kp NUM_0  &kp NUM_1  &kp NUM_2  &kp NUM_3  &kp EQUAL  &kp RALT
-                                       &trans   &trans    &trans      &trans     &mo ADJS     &trans
+          &kp ESC     &kp F9   &kp F10  &kp F11  &kp F12  &none       &kp FSLH   &kp NUM_7  &kp NUM_8  &kp NUM_9  &kp MINUS  &kp BKSP
+          &trans      &kp F5   &kp F6   &kp F7   &kp F8   &none       &kp STAR   &kp NUM_4  &kp NUM_5  &kp NUM_6  &kp COMMA  &kp AT_SIGN
+          &trans      &kp F1   &kp F2   &kp F3   &kp F4   &none       &kp NUM_0  &kp NUM_1  &kp NUM_2  &kp NUM_3  &kp EQUAL  &kp RALT
+                                        &trans   &trans   &trans      &trans     &mo ADJS   &trans
                             >;
                 };
 
@@ -66,9 +66,9 @@
                 raise_layer {
 // RAISE Layer: Special Chars
 // .--------------------------------------------------------------.    .-----------------------------------------------------------.
-// |     ºª\      |    !    |   "    |   ^    |    *    |   ´¨    |    |   (   |    ?    |   <>    |    *    |          |   BKSP   |
+// |     ºª\      |    !    |   "    |   ^    |    *    |  ´¨{    |    |   (   |    ?    |   <>    |    *    |          |   BKSP   |
 // |--------------+---------+--------+--------+---------+---------|    |-------+---------+---------+---------+----------+----------|
-// |   SHFT/Tab   |    ·    |    $   |   )    |    =    |    #    |    |   ¿   |    '    |    -    |    >    |    #·    |   CAPS   |
+// |   SHFT/Tab   |    ·    |    $   |   )    |    =    |    #}   |    |   ¿   |    '    |    -    |    >    |    #·    |   CAPS   |
 // |--------------+---------+--------+--------+---------+---------|    |-------+---------+---------+---------+----------+----------|
 // |     CTRL     |    %    |    &   |  `[   |    +]    |    ª    |    |   /   |    ¡    |    ,    |    ;    |    :     |  ALTGR   |
 // '---------------------------------+--------+---------+---------+    |-------+---------+---------+-------------------------------'
@@ -78,7 +78,7 @@
         &kp GRAVE  &kp EXCL   &kp AT    &kp LBRC  &kp RBRC  &kp QUOT     &kp ASTRK  &kp UNDER  &kp NUBS  &kp KP_MULTIPLY  &none      &kp BKSP
         &trans     &kp HASH   &kp DLLR  &kp LPAR  &kp RPAR  &kp NUHS     &kp PLUS   &kp MINUS  &kp FSLH  &kp PIPE2        &kp POUND  &kp CAPS
         &trans     &kp PRCNT  &kp CARET &kp LBKT  &kp RBKT  &kp TILDE    &kp AMPS   &kp EQUAL  &kp COMMA &kp LT           &kp GT     &kp RALT
-                                      &trans    &mo ADJS    &trans       &trans     &trans     &trans
+                                        &trans    &mo ADJS  &trans       &trans     &trans     &trans
                         >;
                 };
 
@@ -86,19 +86,19 @@
               nav_layer {
 // NAVIGATION Layer: Directions
 // .--------------------------------------------------------------.    .-----------------------------------------------------------.
-// |              |         |        |  MUTE  |   VOL-  |  VOL+   |    | PG UP | PG HOME |   UP    |  PG END |          |  PrtScn  |
+// |      =       |    (    |    )   |  MUTE  |   VOL-  |  VOL+   |    | PG UP | PG HOME |   UP    |  PG END |          |  PrtScn  |
 // |--------------+---------+--------+--------+---------+---------|    |-------+---------+---------+---------+----------+----------|
-// |     SHIFT    |         |        |        |         |         |    | PF DN |  LEFT   |  DOWN   |  RIGHT  |          | CAPS LCK |
+// |     SHIFT    |    /    |        |        |         |         |    | PF DN |  LEFT   |  DOWN   |  RIGHT  |          | CAPS LCK |
 // |--------------+---------+--------+--------+---------+---------|    |-------+---------+---------+---------+----------+----------|
 // |     CTRL     |         |        |        |         |         |    |       |         |         |         |          |          |
 // '---------------------------------+--------+---------+---------+    |-------+---------+---------+-------------------------------'
 //                                   |  GUI   |         |   ALT   |    |       |         |         |
 //                                   '--------+---------+---------'    '-------+---------+---------'
                         bindings = <
-          &none           &none   &none    &kp C_MUTE   &kp C_VOL_DN  &kp C_VOL_UP        &kp PG_UP  &kp HOME   &kp UARW   &kp END   &none  &kp PSCRN
-          &kp LSFT        &none   &none    &none     &none         &none                  &kp PG_DN  &kp LARW   &kp DARW   &kp RARW  &none  &kp CLCK
-          &kp LCTL        &none   &none    &none     &none         &none                  &none      &none      &none      &none     &none  &trans
-                                     &kp LGUI  &none    &kp LALT     &none      &none      &none
+          &kp RBRC        &kp ASTRK   &kp LPAR    &kp C_MUTE   &kp C_VOL_DN  &kp C_VOL_UP        &kp PG_UP  &kp HOME   &kp UARW   &kp END   &none  &kp PSCRN
+          &sk LSHFT       &kp AMPS    &none       &none        &none         &none               &kp PG_DN  &kp LARW   &kp DARW   &kp RARW  &none  &kp CLCK
+          &kp LCTL        &none       &none       &none        &none         &none               &none      &none      &none      &none     &none  &trans
+                                                  &sk LGUI     &none         &kp LALT            &none      &none      &none
                         >;
                 };
 
