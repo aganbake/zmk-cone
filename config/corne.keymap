@@ -46,16 +46,16 @@
 // .--------------------------------------------------------------.    .-----------------------------------------------------------.
 // |   ESC        |    F5   |   F8   |   F9   |   F10   |         |    |   -   |   7 /   |   8 (   |   9 )   |    '?    |   BKSP   |
 // |--------------+---------+--------+--------+---------+---------|    |-------+---------+---------+---------+----------+----------|
-// |   CAPS       |    F4   |   F5   |   F6   |   F11   |         |    |   (   |   4 $   |   5 %   |   6 &   |   ,;     |    @     |
+// |   SHFT/Tab   |    F4   |   F5   |   F6   |   F11   |         |    |   (   |   4$~   |   5%€   |   6&¬   |   ,;     |    @     |
 // |--------------+---------+--------+--------+---------+---------|    |-------+---------+---------+---------+----------+----------|
-// |   CTRL       |    F1   |   F2   |   F3   |   F12   |         |    |  0 =  |   1 !   |   2 "   |   3 ·   |    ¡¿    |   ALTGR  |
+// |   CTRL       |    F1   |   F2   |   F3   |   F12   |         |    |  0 =  |   1!|   |   2"@   |   3·#   |    ¡¿    |   ALTGR  |
 // '---------------------------------+--------+---------+---------+    |-------+---------+---------+-------------------------------'
 //                                   |  GUI   |   RSE   |   SPC   |    |  ENT  |   ADJ   |   LALT   |
 //                                   '--------+---------+---------'    '-------+---------+---------'
 
                   bindings = <
           &trans     &kp F5   &kp F8   &kp F9   &kp F10   &none       &kp FSLH   &kp NUM_7  &kp NUM_8  &kp NUM_9  &kp MINUS  &kp BKSP
-          &kp CAPS   &kp F4   &kp F5   &kp F6   &kp F11   &none       &kp STAR   &kp NUM_4  &kp NUM_5  &kp NUM_6  &kp COMMA  &kp AT_SIGN
+          &trans     &kp F4   &kp F5   &kp F6   &kp F11   &none       &kp STAR   &kp NUM_4  &kp NUM_5  &kp NUM_6  &kp COMMA  &kp AT_SIGN
           &trans     &kp F1   &kp F2   &kp F3   &kp F12   &none       &kp NUM_0  &kp NUM_1  &kp NUM_2  &kp NUM_3  &kp EQUAL  &kp RALT
                                        &trans   &trans    &trans      &trans     &mo ADJS     &trans
                             >;
@@ -66,18 +66,18 @@
                 raise_layer {
 // RAISE Layer: Special Chars
 // .--------------------------------------------------------------.    .-----------------------------------------------------------.
-// |      ~       |    !    |   ""   |   ^    |    *    |    Ç    |    |   (   |    ?    |    \    |    *    |          |          |
+// |      ~ç      |    !    |   "    |   ^    |    *    |    Ç    |    |   (   |    ?    |    <    |    *    |          |   BKSP   |
 // |--------------+---------+--------+--------+---------+---------|    |-------+---------+---------+---------+----------+----------|
-// |              |    ·    |    $   |   )    |    =    |    º    |    |   ¿   |    '    |    -    |    |    |    #     |          |
+// |   SHFT/Tab   |    ·    |    $   |   )    |    =    |   º\    |    |   ¿   |    '    |    -    |    >    |    #·    |   CAPS   |
 // |--------------+---------+--------+--------+---------+---------|    |-------+---------+---------+---------+----------+----------|
-// |              |    %    |    &   |   `    |    +    |    ª    |    |   /   |    ¡    |    ,    |    <    |    >     |  ALTGR   |
+// |     CTRL     |    %    |    &   |  `[   |    +]    |    ª    |    |   /   |    ¡    |    ,    |    ;    |    :     |  ALTGR   |
 // '---------------------------------+--------+---------+---------+    |-------+---------+---------+-------------------------------'
 //                                   |        |         |         |    |       |         |         |
 //                                   '--------+---------+---------'    '-------+---------+---------'
                         bindings = <
-        &kp TILDE2  &kp EXCL   &kp AT    &kp LBRC  &kp RBRC  &kp PIPE     &kp ASTRK  &kp UNDER  &kp NUBS  &kp KP_MULTIPLY  &none      &none
-        &none       &kp HASH   &kp DLLR  &kp LPAR  &kp RPAR  &kp GRAVE    &kp PLUS   &kp MINUS  &kp FSLH  &kp PIPE2        &kp POUND  &none
-        &none       &kp PRCNT  &kp CARET &kp LBKT  &kp RBKT  &kp TILDE    &kp AMPS   &kp EQUAL  &kp COMMA &kp LT           &kp GT     &kp RALT
+        &kp TILDE2  &kp EXCL   &kp AT    &kp LBRC  &kp RBRC  &kp PIPE     &kp ASTRK  &kp UNDER  &kp NUBS  &kp KP_MULTIPLY  &none      &kp BKSP
+        &trans      &kp HASH   &kp DLLR  &kp LPAR  &kp RPAR  &kp GRAVE    &kp PLUS   &kp MINUS  &kp FSLH  &kp PIPE2        &kp POUND  &kp CAPS
+        &trans      &kp PRCNT  &kp CARET &kp LBKT  &kp RBKT  &kp TILDE    &kp AMPS   &kp EQUAL  &kp COMMA &kp LT           &kp GT     &kp RALT
                                       &trans    &mo ADJS    &trans       &trans     &trans     &trans
                         >;
                 };
