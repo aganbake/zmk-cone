@@ -20,14 +20,10 @@
 / {     
     macros {
         mc_brck: mc_brck {
-            label = "ZM_MC_BRCK";
+            label = "ZM_mc_brck";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp RALT>
-                , <&macro_tap &kp LBKT>
-                , <&macro_release &kp RALT>
-                ;
+            bindings = <&kp RALT &kp LBKT>;
         };
     };
 
