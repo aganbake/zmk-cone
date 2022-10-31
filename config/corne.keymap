@@ -38,7 +38,6 @@ behaviors {
         bindings = <&mt LSHIFT CAPSLOCK>, <&kp LSHFT>;
     };
 };
-/ {
         keymap {
                 compatible = "zmk,keymap";
 
@@ -85,4 +84,3 @@ behaviors {
                 };
           };
     };
-};
