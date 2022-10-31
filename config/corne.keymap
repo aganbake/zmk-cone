@@ -75,7 +75,7 @@
 //                                   |        |         |         |    |       |         |         |
 //                                   '--------+---------+---------'    '-------+---------+---------'
                         bindings = <
-        &none    &kp EXCL   &kp AT    &kp LBRC  &kp RBRC  &kp PIPE     &kp ASTRK  &kp UNDER  &kp NUM_8  &C_MUTE   &kp C_VOL_DN  &kp C_VOL_UP
+        &none    &kp EXCL   &kp AT    &kp LBRC  &kp RBRC  &kp PIPE     &kp ASTRK  &kp UNDER  &kp NUM_8  &kp C_MUTE   &kp C_VOL_DN  &kp C_VOL_UP
         &none    &kp HASH   &kp DLLR  &kp LPAR  &kp RPAR  &kp GRAVE    &kp PLUS   &kp MINUS  &kp FSLH   &none  &none  &none
         &none    &kp PRCNT  &kp CARET &kp LBKT  &kp RBKT  &kp TILDE    &kp AMPS   &kp EQUAL  &kp COMMA  &none  &none  &none
                                       &trans    &mo ADJS    &trans       &trans     &trans     &trans
