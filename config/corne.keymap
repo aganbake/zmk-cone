@@ -18,15 +18,6 @@
 #define ADJS    4
 
 / {     
-    macros {
-        mc_brck: mc_brck {
-            label = "ZM_mc_brck";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RALT &kp LBKT>;
-        };
-    };
-
         keymap {
                 compatible = "zmk,keymap";
 
@@ -101,13 +92,13 @@
 // |--------------+---------+--------+--------+---------+---------|    |-------+---------+---------+---------+----------+----------|
 // |     CTRL     |    <>   |    [   |   ]    |    {    |    }    |    |       |         |         |         |          |          |
 // '---------------------------------+--------+---------+---------+    |-------+---------+---------+-------------------------------'
-//                                   |  GUI   |         |   ALT   |    |       |         |         |
+//                                   |  GUI   |         |   ALT   |    | AltGr |         |         |
 //                                   '--------+---------+---------'    '-------+---------+---------'
                         bindings = <
           &kp RPAR        &kp ASTRK   &kp LPAR    &kp C_MUTE   &kp C_VOL_DN  &kp C_VOL_UP        &kp PG_UP  &kp HOME   &kp UARW   &kp END   &none  &kp PSCRN
           &sk LSHFT       &kp AMPS    &RBRC       &none        &none         &none               &kp PG_DN  &kp LARW   &kp DARW   &kp RARW  &none  &kp CLCK
           &kp LCTL        &NUBS       &LBKT       &RBKT        &QUOT         &NUHS               &none      &none      &none      &none     &none  &trans
-                                                  &sk LGUI     &none         &kp LALT            &none      &none      &none
+                                                  &sk LGUI     &none         &kp LALT            &kp RALT   &none      &none
                         >;
                 };
 
