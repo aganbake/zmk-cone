@@ -9,28 +9,28 @@
 #include <dt-bindings/zmk/bt.h>
 
 behaviors {
-    td_than: tap_dance_mod_tap {
+    td_than: tap_dance_0 {
         compatible = "zmk,behavior-tap-dance";
         label = "TAP_DANCE_MOD_TAP";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
         bindings = <&kp LT>, <&kp GV>;
     };
-    td_llv: tap_dance_mod_tap {
+    td_llv: tap_dance_1 {
         compatible = "zmk,behavior-tap-dance";
         label = "TAP_DANCE_MOD_TAP";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
         bindings = <&kp LBKT>, <&kp LBRC>;
     };
-    td_llvl: tap_dance_mod_tap {
+    td_llvl: tap_dance_2 {
         compatible = "zmk,behavior-tap-dance";
         label = "TAP_DANCE_MOD_TAP";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
         bindings = <&kp RBKT>, <&kp RBRC>;
     };
-    td_mt: tap_dance_mod_tap {
+    td_mt: tap_dance_3 {
         compatible = "zmk,behavior-tap-dance";
         label = "TAP_DANCE_MOD_TAP";
         #binding-cells = <0>;
